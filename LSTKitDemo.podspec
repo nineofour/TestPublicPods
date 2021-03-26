@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   #  详细描述
   spec.description  = <<-DESC
-                测试测试
+                  测试打包sdk至pods。
                    DESC
 
   spec.homepage     = "https://github.com/nineofour/TestPublicPods"
@@ -41,7 +41,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
