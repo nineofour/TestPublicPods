@@ -96,12 +96,14 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #  当前目录是podspec文件所在的目录
   #  等号后表示的是要添加 CocoaPods 依赖的库在项目中的相对路径
-  #  “**”这个通配符代表  s.source_files  = "TFKit-OC/TFKit-OC/TFKit/*" 次级文件夹
+  #  “*” 表示匹配所有文件 “*.{h,m}” 表示匹配所有以.h和.m结尾的文件 “**” 表示匹配所有子目录
   #  Exclude中放不需要添加到cocoapods的文件
   #
+  
+    spec.source_files  = "NetworkDemo", "NetworkDemo/**/*{swift}"
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  #  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  #  spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -127,7 +129,7 @@ Pod::Spec.new do |spec|
   #  用到的系统库或者框架以及第三方框架（没用到可没有）
   #
 
-    spec.ios.frameworks = 'Foundation', 'UIKit'
+    spec.frameworks = 'Foundation'
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
@@ -145,6 +147,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+   spec.dependency "Alamofire"
 
 end
