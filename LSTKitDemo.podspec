@@ -16,9 +16,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LSTKitDemo"
-  spec.version      = "0.2.0"
+  spec.version      = "0.2.1"
   #  简短描述
-  spec.summary      = "测试打包sdk至pods"
+  spec.summary      = "测试"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
