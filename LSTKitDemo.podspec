@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LSTKitDemo"
-  spec.version      = "0.0.1"
+  spec.version      = "0.2.0"
   #  简短描述
   spec.summary      = "测试打包sdk至pods"
 
@@ -100,7 +100,7 @@ Pod::Spec.new do |spec|
   #  Exclude中放不需要添加到cocoapods的文件
   #
   
-    spec.source_files  = "NetworkDemo", "NetworkDemo/**/*{swift}"
+    spec.source_files  = "NetworkDemo", "NetworkDemo/*"
 
   #  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   #  spec.exclude_files = "Classes/Exclude"
